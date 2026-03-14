@@ -74,9 +74,11 @@
         }
 
         .glass-panel {
-            background: rgba(10, 10, 10, 0.8);
-            backdrop-filter: blur(12px);
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         }
 
         .vignette {
@@ -104,7 +106,7 @@
 <body class="bg-black text-text-main font-sans antialiased selection:bg-cyan selection:text-black overflow-x-hidden relative">
     
     <!-- Interactive 3D Background effect (Spline-like) -->
-    <div id="vanta-bg" class="fixed inset-0 z-[-5] opacity-60"></div>
+    <div id="vanta-bg" class="fixed inset-0 z-[-5] opacity-30 md:opacity-40"></div>
 
     <div class="vignette pointer-events-none"></div>
 
@@ -302,54 +304,54 @@
                     <span data-es="EXPERIENCIA PROFESIONAL" data-en="PROFESSIONAL EXPERIENCE">EXPERIENCIA
                         PROFESIONAL</span>
                 </h2>
-                <div class="space-y-8 relative pl-4">
-                    <div class="absolute left-0 top-0 bottom-0 w-px bg-gray-800"></div>
+                <div class="space-y-6 relative pl-4">
+                    <div class="absolute left-0 top-0 bottom-0 w-px bg-cyan/30"></div>
 
-                    <div class="relative pl-6">
+                    <div class="relative pl-6 glass-panel p-4 md:p-6 rounded-r-lg hover:border-l-2 hover:border-cyan transition-colors mb-4 ml-2">
                         <div
-                            class="absolute left-[-4.5px] top-2 w-[9px] h-[9px] rounded-full bg-cyan shadow-[0_0_8px_#00E5FF]">
+                            class="absolute left-[-29px] top-6 w-[9px] h-[9px] rounded-full bg-cyan shadow-[0_0_8px_#00E5FF]">
                         </div>
                         <h4 class="text-xl font-bold text-white uppercase">B&I Contractors, Inc. – Florida, EE. UU.</h4>
-                        <p class="text-cyan text-sm font-bold uppercase"
+                        <p class="text-cyan text-sm font-bold uppercase mt-1"
                             data-es="Encargado de Montaje | División de Tuberías Industriales"
                             data-en="Assembly Foreman | Industrial Piping Division">Encargado de Montaje | División de
                             Tuberías Industriales</p>
                         <p class="text-xs text-gray-500 italic mt-1">(Pipefitting Foreman)</p>
                     </div>
 
-                    <div class="relative pl-6">
-                        <div class="absolute left-[-4.5px] top-2 w-[9px] h-[9px] rounded-full bg-gray-700"></div>
+                    <div class="relative pl-6 p-4 md:p-6 ml-2 bg-surface/50 rounded-r-lg hover:bg-white/5 transition-colors mb-4">
+                        <div class="absolute left-[-29px] top-6 w-[9px] h-[9px] rounded-full bg-gray-600"></div>
                         <h4 class="text-lg font-bold text-white uppercase">Madden Bolt Corporation – Texas, EE. UU.</h4>
-                        <p class="text-gray-400 text-sm" data-es="Asistente de Fabricación / Soldador Industrial"
+                        <p class="text-gray-400 text-sm mt-1" data-es="Asistente de Fabricación / Soldador Industrial"
                             data-en="Fabrication Assistant / Industrial Welder">Asistente de Fabricación / Soldador
                             Industrial</p>
-                        <p class="text-xs text-cyan opacity-80 mt-1">2023 – 2024</p>
+                        <p class="text-xs text-cyan opacity-80 mt-2">2023 – 2024</p>
                     </div>
 
-                    <div class="relative pl-6">
-                        <div class="absolute left-[-4.5px] top-2 w-[9px] h-[9px] rounded-full bg-gray-700"></div>
+                    <div class="relative pl-6 p-4 md:p-6 ml-2 bg-surface/50 rounded-r-lg hover:bg-white/5 transition-colors mb-4">
+                        <div class="absolute left-[-29px] top-6 w-[9px] h-[9px] rounded-full bg-gray-600"></div>
                         <h4 class="text-lg font-bold text-white uppercase">Comelec – Cuba</h4>
-                        <p class="text-gray-400 text-sm" data-es="Especialista Principal, Jefe de Brigada de Refrigeración y Climatización"
+                        <p class="text-gray-400 text-sm mt-1" data-es="Especialista Principal, Jefe de Brigada de Refrigeración y Climatización"
                             data-en="Principal Specialist, Head of Refrigeration & HVAC Brigade">Especialista Principal, Jefe de Brigada de Refrigeración y Climatización</p>
-                        <p class="text-xs text-cyan opacity-80 mt-1">09/2008 – 07/2023</p>
+                        <p class="text-xs text-cyan opacity-80 mt-2">09/2008 – 07/2023</p>
                     </div>
 
-                    <div class="relative pl-6">
-                        <div class="absolute left-[-4.5px] top-2 w-[9px] h-[9px] rounded-full bg-gray-700"></div>
+                    <div class="relative pl-6 p-4 md:p-6 ml-2 bg-surface/50 rounded-r-lg hover:bg-white/5 transition-colors mb-4">
+                        <div class="absolute left-[-29px] top-6 w-[9px] h-[9px] rounded-full bg-gray-600"></div>
                         <h4 class="text-lg font-bold text-white uppercase"
                             data-es="Empresa Cárnica Tauro – Cuba" data-en="Tauro Meat Company – Cuba">Empresa Cárnica Tauro – Cuba</h4>
-                        <p class="text-gray-400 text-sm" data-es="Mecánico Industrial Sector Refrigeración"
+                        <p class="text-gray-400 text-sm mt-1" data-es="Mecánico Industrial Sector Refrigeración"
                             data-en="Industrial Mechanic - Refrigeration Sector">Mecánico Industrial Sector Refrigeración</p>
-                        <p class="text-xs text-cyan opacity-80 mt-1">10/2003 – 08/2008</p>
+                        <p class="text-xs text-cyan opacity-80 mt-2">10/2003 – 08/2008</p>
                     </div>
 
-                    <div class="relative pl-6">
-                        <div class="absolute left-[-4.5px] top-2 w-[9px] h-[9px] rounded-full bg-gray-700"></div>
+                    <div class="relative pl-6 p-4 md:p-6 ml-2 bg-surface/50 rounded-r-lg hover:bg-white/5 transition-colors">
+                        <div class="absolute left-[-29px] top-6 w-[9px] h-[9px] rounded-full bg-gray-600"></div>
                         <h4 class="text-lg font-bold text-white uppercase"
                             data-es="Empresa SERMAC – Cuba" data-en="SERMAC Company – Cuba">Empresa SERMAC – Cuba</h4>
-                        <p class="text-gray-400 text-sm" data-es="Año de Adiestramiento del Servicio Social"
+                        <p class="text-gray-400 text-sm mt-1" data-es="Año de Adiestramiento del Servicio Social"
                             data-en="Social Service Training Year">Año de Adiestramiento del Servicio Social</p>
-                        <p class="text-xs text-cyan opacity-80 mt-1">10/2002 – 10/2003</p>
+                        <p class="text-xs text-cyan opacity-80 mt-2">10/2002 – 10/2003</p>
                     </div>
                 </div>
             </section>
